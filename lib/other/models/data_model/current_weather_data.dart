@@ -1,11 +1,13 @@
 class CurrentWeatherData {
-  final temperature; //*
+  final temperature;
   final rain;
   final showers;
   final snowfall;
   final humidity;
   final windSpeed;
-  final time; //*
+  final time;
+  final timeList;
+  final temperatureList;
 
   CurrentWeatherData({
     required this.temperature,
@@ -15,6 +17,8 @@ class CurrentWeatherData {
     required this.humidity,
     required this.windSpeed,
     required this.time,
+    required this.timeList,
+    required this.temperatureList,
   });
   factory CurrentWeatherData.fromJson(dynamic json) {
     return CurrentWeatherData(
@@ -25,6 +29,8 @@ class CurrentWeatherData {
       humidity: json['current']['relative_humidity_2m'],
       windSpeed: json['current']['wind_speed_10m'],
       time: json['current']['time'],
+      timeList: json['hourly']['time'],
+      temperatureList: json['hourly']['temperature_2m'],
     );
   }
 
@@ -36,5 +42,7 @@ class CurrentWeatherData {
         'humidity': humidity,
         'windSpeed': windSpeed,
         'time': time,
+        'timeList': timeList,
+        'temperatureList': temperatureList,
       };
 }

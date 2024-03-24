@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:weather_get/main_screen.dart';
 import 'package:weather_get/other/controllers/global_controller.dart';
 import 'package:weather_get/other/models/loading.dart';
 

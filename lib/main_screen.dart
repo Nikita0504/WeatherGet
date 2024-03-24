@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:weather_get/widgets/additional_information.dart';
 import 'package:weather_get/widgets/bar_future_weaher.dart';
+import 'package:weather_get/widgets/hourly_weather/hourly_weather.dart';
 import 'package:weather_get/widgets/temperature_date.dart';
 
 class MainScreen extends StatelessWidget {
@@ -17,7 +18,12 @@ class MainScreen extends StatelessWidget {
           SizedBox(width: 10),
           Column(
             mainAxisAlignment: MainAxisAlignment.start,
-            children: [TemperatureData(), AdditionalInformation()],
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              TemperatureData(),
+              AdditionalInformation(),
+              HourlyWeather(),
+            ],
           )
         ],
       ),

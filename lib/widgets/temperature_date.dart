@@ -13,7 +13,7 @@ class TemperatureData extends GetView<GlobalController> {
     CurrentWeatherData data = controller.data;
     return Container(
         margin:
-            EdgeInsets.fromLTRB(0, size.height * 0.1, 0, size.height * 0.25),
+            EdgeInsets.fromLTRB(0, size.height * 0.1, 0, size.height * 0.185),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
