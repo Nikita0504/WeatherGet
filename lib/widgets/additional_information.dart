@@ -10,7 +10,7 @@ class AdditionalInformation extends GetView<GlobalController> {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     CurrentWeatherData data = controller.data;
-    TextStyle style = const TextStyle(color: Colors.white, fontSize: 23);
+    TextStyle style = const TextStyle(color: Colors.white, fontSize: 20);
     return Container(
         margin:
             EdgeInsets.fromLTRB(size.width * 0.05, size.height * 0.16, 10, 10),
@@ -30,23 +30,23 @@ class AdditionalInformation extends GetView<GlobalController> {
                 style: style,
               ),
               Text(
-                'Rain: ${data.rain.toString()}mm',
+                'Rain: ${data.rain.toString()} mm',
                 style: style,
               ),
               Text(
-                'Humidity: ${data.humidity.toString()}%',
+                'Humidity: ${data.humidity.toString()} %',
                 style: style,
               ),
               Text(
-                'Snowfall: ${data.snowfall.toString()}cm',
+                'Snowfall: ${data.snowfall.toString()} cm',
                 style: style,
               ),
               Text(
-                'Showers: ${data.showers.toString()}mm',
+                'Showers: ${data.showers.toString()} mm',
                 style: style,
               ),
               Text(
-                'WindSpeed: ${data.windSpeed.toString()}km/h',
+                'WindSpeed: ${data.windSpeed.toString()} km/h',
                 style: style,
               ),
             ],

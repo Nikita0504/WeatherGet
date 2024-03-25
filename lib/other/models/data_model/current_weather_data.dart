@@ -22,7 +22,7 @@ class CurrentWeatherData {
   });
   factory CurrentWeatherData.fromJson(dynamic json) {
     return CurrentWeatherData(
-      temperature: json['current']['temperature_2m'],
+      temperature: json['current']['apparent_temperature'],
       rain: json['current']['rain'],
       showers: json['current']['showers'],
       snowfall: json['current']['snowfall'],

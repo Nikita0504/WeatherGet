@@ -5,6 +5,7 @@ import 'package:weather_get/other/models/get_data/get_current_location.dart';
 
 class GlobalController extends GetxController {
   var data;
+  var futureData;
   RxBool dataReady = false.obs;
 
   @override
